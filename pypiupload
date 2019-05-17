@@ -1,0 +1,15 @@
+#! /bin/sh
+#
+# pypiupload.sh
+# Copyright (C) 2018 zenbook <zenbook@zenbook-XPS>
+#
+# Distributed under terms of the MIT license.
+#
+
+pipreqs . --print | sed s/==.*// | sort > requirements.txt
+rm dist/*
+if [ -f README.md ]; then
+    m2r README.md --overwrite
+fi
+python3 setup.py sdist
+twine upload --repository pypi dist/*

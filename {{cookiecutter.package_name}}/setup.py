@@ -9,7 +9,7 @@ except:
 
 
 def read(filename):
-    file_path = Path(__file__).parent / 'requirements.txt'
+    file_path = Path(__file__).parent / filename
     text_type = type(u"")
     with open(file_path, mode="r", encoding='utf-8') as f:
         return re.sub(text_type(r':[a-z]+:`~?(.*?)`'), text_type(r'``\1``'), f.read())

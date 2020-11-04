@@ -10,8 +10,12 @@ import pytest
 import stdlogging
 from add_parent_path import add_parent_path
 
+
 with add_parent_path():
     import {{ cookiecutter.package_name }}
+
+
+logger = kanilog.get_module_logger(__file__, 0)
 
 
 def setup_module(module):

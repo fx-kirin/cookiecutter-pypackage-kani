@@ -20,7 +20,7 @@ def get_requires():
     else:
         requred = []
 
-    r_path = Path(__file__).parent / "manua _requirements.txt"
+    r_path = Path(__file__).parent / "manual_requirements.txt"
     if r_path.exists():
         with open(r_path) as f:
             for req in f.read().splitlines():

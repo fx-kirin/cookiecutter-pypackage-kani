@@ -24,4 +24,4 @@
 
 ## Authors
 
-# {{ cookiecutter.package_name }} was written by [fx-kirin](fx.kirin@gmail.com).
+{{ cookiecutter.package_name }} was written by [fx-kirin](fx.kirin@gmail.com).

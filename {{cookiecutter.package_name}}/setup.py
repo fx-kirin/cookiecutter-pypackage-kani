@@ -52,5 +52,5 @@ setup(
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
     ],
-    data_files=[("", ["requirements.txt"])],
+    data_files=[("", ["requirements.txt", "manual_requirements.txt"])],
 )
